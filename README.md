@@ -27,8 +27,8 @@
 
 ### Links
 
-- Solution URL: [Click to view project](https://your-solution-url.com)
-- Live Site URL: [Click to view project live](https://your-live-site-url.com)
+- Solution URL: [Click to view project](https://github.com/G-best007/E-commerce-Product-Page)
+- Live Site URL: [Click to view project live](https://g-best007.github.io/E-commerce-Product-Page/)
 
 ## My process
 
