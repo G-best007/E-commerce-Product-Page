@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md  bg-body-white border-bottom border-light-subtle border-opacity-75">
+    <div class="container-lg">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand me-auto">
+        <img src="./images/logo.svg" class="logo" alt="logo">
+      </a>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 mt-2 ms-md-5">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Woman</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="RHSIcon d-flex justify-content-center align-items-center">
+        <div class="carticon position-relative">
+          <img src="./images/icon-cart.svg" class="cartIcon" alt="carticon">
+          <span class="position-absolute top-0 start-100 translate-middle badge  rounded-pill">3</span>
+        </div>
+        <div class="userIcon">
+          <a href="#">
+            <img src="./images/image-avatar.png" class="UserIcon" alt="Usericon">
+          </a>
+        </div>
+      </div> 
+    </div>
+
+  </nav>
+
+
+  <main class="container-lg cartElement">
+    <section class="row position-relative">
+      <article class="col-md-4"></article>
+      <article class="col-md-4"></article>
+      <article class="col-md-4">
+        <div class="card popCardPrice">
+          <div class="card-header bg-white">Cart</div>
+          <div class="card-body">
+            <div class="cartempty fw-bold">
+              <p class="cartemptyPara d-flex justify-content-center align-items-center">Your cart is empty.</p>
+            </div>
+            <div class="filledCart">
+              <div class="d-flex align-items-center cartImage">
+                <img src="./images/image-product-1.jpg" class="filledcartImage me-4" alt="Image">
+                <div class="filledcartprice">
+                  <p class="text-capitalize mt-3">fall limited edition sneakers</p>
+                  <p class="mb-2 d-flex">
+                    <span class="price me-2">$125</span>
+                    <span class="me-2">*</span> 
+                    <span class="numberOfItems me-2">3</span>
+                    <span class="fw-bold">$<span class="totalPriceOfItems">375.00</span></span>
+                  </p>
+                </div>
+                <img src="./images/icon-delete.svg" class="deletecart ms-5" alt="deletecart">
+              </div>
+              <button class="btn checkoutBtn">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+
+  <main class="container-lg position-absolute my-md-5 ProductContent">
+    <section class="row">
+      <article class="col-md-6 ps-md-5">
+        <div class="desktopProductBanner">
+
+          <div class="productbanner card" id="liveToastBtn">
+            <img src="images/image-product-1.jpg">
+          </div>
+        <ul class="allthumbnail d-md-flex justify-content-between align-items-center mt-4">
+        <li class="ThumbnailLinks">
+          <a href="images/image-product-1.jpg" class="productImage">
+            <img src="images/image-product-1-thumbnail.jpg" class="thumbnail" alt="image">
+          </a>
+        </li>
+        <li class="ThumbnailLinks">
+          <a href="images/image-product-2.jpg" class="productImage">
+            <img src="images/image-product-2-thumbnail.jpg" class="thumbnail" alt="image">
+          </a>
+        </li>
+        <li class="ThumbnailLinks">
+          <a href="images/image-product-3.jpg" class="productImage">
+            <img src="images/image-product-3-thumbnail.jpg" class="thumbnail" alt="image">
+          </a>
+        </li>
+        <li class="ThumbnailLinks">
+          <a href="images/image-product-4.jpg" class="productImage">
+            <img src="images/image-product-4-thumbnail.jpg" class="thumbnail" alt="image">
+          </a>
+        </li>
+        </ul>
+        </div>
+        <div class="mobileProductBanner">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/image-product-1.jpg"  alt="image" class="d-block card mobProduct">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-product-2.jpg"  alt="image" class="d-block card mobProduct">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-product-3.jpg"  alt="image" class="d-block card mobProduct">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-product-4.jpg"  alt="image" class="d-block card mobProduct">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+        </div>
+      </article>
+      <article class="col-md-6 rightside mt-md-5 position-relative">
+        <div class="title">
+          <p class="text-uppercase fw-bold">sneaker company</p>
+          <h3 class="text-capitalize">fall limited edition <br> sneakers</h3>
+        </div>
+        <div class="para mt-3">
+          <p class="pe-5">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+          <div class="price">
+            <div class="priceTag d-flex align-items-center mt-4">
+              <h4 class="fw-bold me-3">$<span>125.00</span></h4>
+                <div class="pricePerct mb-2 ms-3">
+                  <span class="ms-2 fw-bold">50%</span>
+                </div>
+            </div>
+              <div class="crossedprice">
+                <h6 class="text-decoration-line-through opacity-50 fw-normal">$250.00</h6>
+              </div>
+          </div>
+          <div class="allbtn d-flex align-items-center">
+              <div class="countBtn d-flex align-items-center justify-content-between">
+                <button class="btn minus countbtn">
+                  <img src="./images/icon-minus.svg" alt="icon-minus">
+                </button>
+                <span class="count fw-bolder">0</span>
+                <button class="btn plus countbtn">
+                  <img src="./images/icon-plus.svg" alt="icon-plus">
+                </button>
+              </div>
+              <div class="cartBtn">
+                <button type="button" class="btn cartbtn">
+                  <span class="me-2">
+                    <img src="./images/icon-cart.svg" class="btnCart" alt="">
+                  </span>
+                  <span class="addtocartword">
+                    Add to cart
+                  </span>
+                </button>
+              </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <main class="container-lg toast-container">
+      <!-- lightweight -->
+        <div id="liveToast" class="toast position-absolute top-50 start-50 translate-middle" role="alert"
+          aria-live="assertive" data-bs-autohide="false">
+          <div class="toast-header">
+            <button type="button" class="btn-close lightWeightBtn ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            <div class="LightWeightbanner card" id="liveToastBtn">
+              <img src="images/image-product-1.jpg">
+            </div>
+            <ul class="allthumbnail d-md-flex justify-content-between align-items-center mt-4 d-none">
+              <li class="ThumbnailLinks">
+                <a href="images/image-product-1.jpg" class="productImage">
+                  <img src="images/image-product-1-thumbnail.jpg" class="thumbnail" alt="image">
+                </a>
+              </li>
+              <li class="ThumbnailLinks">
+                <a href="images/image-product-2.jpg" class="productImage">
+                  <img src="images/image-product-2-thumbnail.jpg" class="thumbnail" alt="image">
+                </a>
+              </li>
+              <li class="ThumbnailLinks">
+                <a href="images/image-product-3.jpg" class="productImage">
+                  <img src="images/image-product-3-thumbnail.jpg" class="thumbnail" alt="image">
+                </a>
+              </li>
+              <li class="ThumbnailLinks">
+                <a href="images/image-product-4.jpg" class="productImage">
+                  <img src="images/image-product-4-thumbnail.jpg" class="thumbnail" alt="image">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      
+      <!-- end of lightweight -->
+  </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
